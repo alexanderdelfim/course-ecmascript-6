@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        var jogador = {
+            nome: "Messi",
+            habilidades: ["chutar", "driblar", "correr", "fazer gols"],
+            escreverHabilidades: function() {
+                var _this = this;
+                this.habilidades.forEach(function(skill) {
+                    console.log(_this.nome + " é craque em " + skill);
+                });
+            }
+        }
+        
+        jogador.escreverHabilidades();
+
+    </script>
+    <title>Course ECMAScript 6</title>
+</head>
+
+<body>
+    <section></section>
+</body>
+
+</html>
